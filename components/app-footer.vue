@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="footer-content container mx-auto flex justify-around flex-col md:flex-row">
-            <div class="footer-info flex-auto">
+            <div class="footer-info flex-auto flex flex-col justify-center">
                 <h1>LOGO</h1>
                 <p>字集专注搜集免费商用字体</p>
             </div>
@@ -44,9 +44,6 @@
             <div class="footer-contact flex-auto">
                 <h3>关注我们</h3>
                 <p>
-                    phone:400-000-1234
-                </p>
-                <p>
                     <iconpark-icon name="wechat"></iconpark-icon>
                     <iconpark-icon name="tencent-qq"></iconpark-icon>
                 </p>
@@ -75,7 +72,7 @@ footer a:hover{
     padding: 1.5rem;
 }
 .footer-category h3,.footer-contact h3{
-    margin-bottom: .6rem;
+    margin: .6rem 0;
 }
 .footer-category p{
     padding: .2rem;

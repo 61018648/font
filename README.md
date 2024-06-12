@@ -64,6 +64,13 @@ yarn build
 bun run build
 ```
 
+```bash
+
+# npm 
+npm run generate
+
+```
+
 Locally preview production build:
 
 ```bash

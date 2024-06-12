@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css','animate.css'],
   ssr: true,
   postcss: {
     plugins: {
@@ -9,15 +9,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  nitro: {
-    devProxy: {
-      "/api": {
-        target: "https://www.mfonts.cn/",
-        changeOrigin: true,
-        prependPath: true,
-      },
-    },
-  },
+  // nitro: {
+  //   devProxy: {
+  //     "/api": {
+  //       target: "https://www.mfonts.cn/",
+  //       changeOrigin: true,
+  //       prependPath: true,
+  //     },
+  //   },
+  // },
   app: {
     head: {
       script: [

@@ -1,22 +1,21 @@
-<script setup>
-// import Header from '../common/header';
-// import Footer from '../common/footer';
+<script setup lang="ts">
+const {name} = useAppConfig();
+
 useHead({
-  title: '所有字体 - 字集',
+  titleTemplate(title){
+    return title ? `${title} - ${name}` : name;
+  },
+  title: '中文字体',
   meta: [
-    { hid: 'keywords', name: 'keywords', content: '字体天下,首页' }
+    { hid: 'keywords', name: 'keywords', content: '字体天下,首页' + name }
   ]
 })
 </script>
 
 <template>
-    <!-- <Header /> -->
-    <div class="site_content pt-6">
-        <section>
+        <section class="site_content">
             中文字体
         </section>
-    </div>
-    <!-- <Footer /> -->
 </template>
 
 <style scoped></style>
